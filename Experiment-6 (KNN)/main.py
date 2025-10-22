@@ -24,7 +24,7 @@ print(f"\nBest K for Iris dataset: {best_k}")
 print(f"Highest Accuracy: {max(accuracies) * 100:.2f}%\n")
 
 # Plot accuracy vs k
-plt.plot(k_values, accuracies, marker='o')
+plt.plot(k_values, accuracies, marker='o', color='red')
 plt.title("Accuracy vs K (Iris Dataset)")
 plt.xlabel("K Value")
 plt.ylabel("Accuracy")
@@ -48,7 +48,7 @@ best_k_wine = k_values[np.argmax(wine_accuracies)]
 print(f"\nBest K for Wine dataset: {best_k_wine}")
 print(f"Highest Accuracy: {max(wine_accuracies) * 100:.2f}%\n")
 
-plt.plot(k_values, wine_accuracies, marker='o', color='orange')
+plt.plot(k_values, wine_accuracies, marker='o', color='green')
 plt.title("Accuracy vs K (Wine Dataset)")
 plt.xlabel("K Value")
 plt.ylabel("Accuracy")
